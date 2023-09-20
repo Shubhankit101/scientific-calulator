@@ -6,7 +6,7 @@
     height: 380px;
     width: 400px;
     margin: auto;
-    background-color: #191b28;
+    background-color: #f8f6d5;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
@@ -26,10 +26,10 @@
 
 input[type=button] {
     font-family: 'Orbitron', sans-serif;
-    background-color: #ffd700;
+    background-color: #f3f0e2;
     color: rgb(30, 27, 27);
     border: solid black 0.5px;
-    width: 100%;
+    width: 100px;
     border-radius: 5px;
     height: 70%;
     outline: none;
