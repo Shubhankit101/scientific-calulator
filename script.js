@@ -6,7 +6,7 @@ function clearScreen() {
 function display(value) {
     document.getElementById("result").value += value;
 }
-
+//Used to calculate the result
 function calculate() {
     let p = document.getElementById("result").value;
     let q = eval(p);
@@ -15,27 +15,25 @@ function calculate() {
 const themeChangeEle = document.querySelector('.themeChange');
 
 //Changing button Color
-const btnChange =function(value){
-    let ele = document.querySelectorAll('.btn-normal');
-    if(value === 'DarkMode'){
-        for(let i = 0; ele.length > i; i++)
-            ele[i].style.backgroundColor = '#b0e9f5';
+const btnChange = function(value) {
+        let ele = document.querySelectorAll('.btn-normal');
+        if (value === 'DarkMode') {
+            for (let i = 0; ele.length > i; i++)
+                ele[i].style.backgroundColor = '#b0e9f5';
+        } else {
+            for (let i = 0; ele.length > i; i++)
+                ele[i].style.backgroundColor = '#f3f0e2';
+        }
     }
-    else{
-        for(let i = 0; ele.length > i; i++)
-            ele[i].style.backgroundColor = '#f3f0e2';
-    }
-} 
-//Theme change functionality
+    //Theme change functionality
 themeChangeEle.addEventListener('click', function() {
     let theme = document.querySelector('.themeChange').value;
     if (theme === 'DarkMode') {
         document.querySelector('.calculator').style.backgroundColor = '#212122';
         document.querySelector('.themeChange').value = 'LightMode';
         btnChange(theme);
-        //document.querySelectorAll('.btn-normal').style.backgroundColor = '#b0e9f5';
     } else {
-        theme ='LightMode';
+        theme = 'LightMode';
         document.querySelector('.calculator').style.backgroundColor = '#f8f6d5';
         document.querySelector('.themeChange').value = 'DarkMode';
         btnChange(theme);
