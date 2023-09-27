@@ -32,3 +32,4 @@ const changeTheme = function(){
     }
 }//Theme change functionality
 themeChangeEle.addEventListener('click', changeTheme);
+

@@ -24,7 +24,7 @@
     background-color: #e1dfdf;
 }
 
-input[type=button] {
+input {
     font-family: 'Orbitron', sans-serif;
     background-color: #f3f0e2;
     color: rgb(30, 27, 27);
@@ -35,9 +35,9 @@ input[type=button] {
     outline: none;
 }
 
-input:active[type=button] {
-    background: #e5e5e5;
-    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
-    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
-    box-shadow: inset 0px 0px 5px #c1c1c1;
+.btn-normal:active {
+    background: #e5e5e5 !important;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1 !important;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1 !important;
+    box-shadow: inset 0px 0px 5px #c1c1c1 !important;
 }
