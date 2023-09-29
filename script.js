@@ -1,3 +1,5 @@
+const themeChangeEle = document.querySelector('.themeChange');
+const advEle = document.getElementById('adv');
 // This function clears all the values
 function clearScreen() {
     document.getElementById("result").value = "";
@@ -12,7 +14,6 @@ function calculate() {
     let q = eval(p);
     document.getElementById("result").value = q;
 }
-const themeChangeEle = document.querySelector('.themeChange');
 //Function used to change theme
 const changeTheme = function(){
     let theme = document.querySelector('.themeChange').value;
@@ -30,6 +31,8 @@ const changeTheme = function(){
         for (let i = 0; ele.length > i; i++)
                 ele[i].style.backgroundColor = '#f3f0e2';
     }
-}//Theme change functionality
+}
+//Theme change functionality
 themeChangeEle.addEventListener('click', changeTheme);
 
+//Advance change functionaly
